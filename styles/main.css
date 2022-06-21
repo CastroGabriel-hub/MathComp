@@ -237,6 +237,15 @@ nav .fa{
     font-weight: 600;
 }
 
+.bi{
+    color: #fff;
+}
+
+.footerComponent{
+    margin-top: 20px;
+    color: #fff;
+}
+
 @media(max-width: 1279px){
     .missao, .diferencial {
         margin: 30px;
