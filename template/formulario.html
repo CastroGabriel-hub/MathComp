@@ -11,15 +11,41 @@
 <body> 
     <header class = "header">
         <nav class="navbar">
+            <div class="mobile-menu">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+            </div>
                 <ul class="nav-links">
-                    <i class="fa fa-times" onClick = "hideMenu()"></i>
                     <li><a href="home.html">Home</a></li>
                     <li><a href="evento.html">Evento</a></li>
                     <li><a href="formulario.html">Inscreva-se</a></li>
                 </ul>
 
-                <button class="btnLogin btn"><a href="#">Login</a></button>
-            <i class="fa fa-bars" onClick = "showMenu()"></i>
+                <button class="btnLogin btn" onclick="showModal()"><a href="#">Login</a></button>
+
+                <div class="modal" id="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="hideModal()">&times;</span>
+                        <h1 class="h1Login">Login</h1>
+                        <div class="form-group">
+                            <div class="login">
+                                <label for="Usuário"><h1>Usuário</h1></label><br>
+                                <input type="text" class="form-control" name="usuario" placeholder="Usuário">
+                            </div>
+                            <div class="login">
+                                <label for="senha"><h1>Senha</h1></label><br>
+                                <input type="password" class="form-control" name="senha" placeholder="Senha" >
+                            </div>
+                            <div >
+                                <input class="entrar" type='submit' value='Login'>
+                            </div>
+                            <div class="cadastro">
+                                <p>Não possui conta, <a class="cadastro" href="formulario.html">Cadastre-se</a></p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
         </nav>
     </header>
     <div class="formContainer">
@@ -79,6 +105,11 @@
         <p class="footerComponent"><i class="bi bi-telephone"></i> (45) 99914-1402</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+        crossorigin="anonymous">
+    </script>
+    <script src="../scripts/functionsNav.js"></script>
+    <script src="../scripts/main.js"></script>
 </body>
 </html>

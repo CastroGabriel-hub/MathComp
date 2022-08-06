@@ -13,9 +13,13 @@
     <body>
         <header class = "header">
             <nav class="navbar">
+                <div class="mobile-menu">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </div>
                     <ul class="nav-links">
-                        <i class="fa fa-times" onClick = "hideMenu()"></i>
-                        <li><a href="home.html">Home</a></li>
+                        <li ><a href="home.html">Home</a></li>
                         <li><a href="evento.html">Evento</a></li>
                         <li><a href="formulario.html">Inscreva-se</a></li>
                     </ul>
@@ -44,7 +48,6 @@
                             </div> 
                         </div>
                     </div>
-                <i class="fa fa-bars" onClick = "showMenu()"></i>
             </nav>
         </header>
 
@@ -53,8 +56,8 @@
                 <h1 class="boxItem title01">Math Comp.</h1>
                 <p class="boxItem p01">O projeto de extensão [nome] com sede no Instituto Federal do Paraná te convida a participar da competição de matemática MathX com seus amigos!  </p>
                 <div class="btnDiv boxItem">
-                    <button class="saibaBtn btn boxBtn"><a href="#">Saiba mais!</a></button>
-                    <button class="incBtn btn boxBtn"><a href="../template/formulario.html">Inscreva-se</a></button>
+                    <button class="saibaBtn btn boxBtn"><a href="evento.html">Saiba mais!</a></button>
+                    <button class="incBtn btn boxBtn"><a href="formulario.html">Inscreva-se</a></button>
                 </div>
             </div>
             <div class="imgB">
@@ -105,24 +108,7 @@
             <p class="footerComponent"><i class="bi bi-telephone"></i> (45) 99914-1402</p>
         </footer>
 
-        <script>
-            var nav = document.getElementById("navLinks");
-
-            function showMenu(){
-                nav.style.right="0px";
-            }
-            function hideMenu(){
-                nav.style.right="-400px";
-            }
-
-            function showModal(){
-                var element = document.getElementById('modal');
-                element.classList.add('show-modal');
-            }
-            function hideModal(){
-                var element = document.getElementById('modal');
-                element.classList.remove('show-modal');
-            }
-        </script>
+        <script src="../scripts/functionsNav.js"></script>
+        <script src="../scripts/main.js"></script>
     </body>
 </html>
