@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
         
         <title>Home</title>
+
     </head>
     <body>
         <header class = "header">
@@ -19,7 +20,15 @@
                         <li><a href="formulario.html">Inscreva-se</a></li>
                     </ul>
 
-                    <button class="btnLogin btn"><a href="#">Login</a></button>
+                    <button class="btnLogin btn" onclick="showModal()"><a href="#">Login</a></button>
+
+                    <div class="modal" id="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="hideModal()">&times;</span>
+                            <h1>teste</h1>
+                        </div>
+                    </div>
+
                 <i class="fa fa-bars" onClick = "showMenu()"></i>
             </nav>
         </header>
@@ -89,6 +98,15 @@
             }
             function hideMenu(){
                 nav.style.right="-400px";
+            }
+
+            function showModal(){
+                var element = document.getElementById('modal');
+                element.classList.add('show-modal');
+            }
+            function hideModal(){
+                var element = document.getElementById('modal');
+                element.classList.remove('show-modal');
             }
         </script>
     </body>
