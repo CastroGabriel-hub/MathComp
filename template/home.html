@@ -25,10 +25,25 @@
                     <div class="modal" id="modal">
                         <div class="modal-content">
                             <span class="close" onclick="hideModal()">&times;</span>
-                            <h1>teste</h1>
+                            <h1 class="h1Login">Login</h1>
+                            <div class="form-group">
+                                <div class="login">
+                                    <label for="Usuário"><h1>Usuário</h1></label><br>
+                                    <input type="text" class="form-control" name="usuario" placeholder="Usuário">
+                                </div>
+                                <div class="login">
+                                    <label for="senha"><h1>Senha</h1></label><br>
+                                    <input type="password" class="form-control" name="senha" placeholder="Senha" >
+                                </div>
+                                <div >
+                                    <input class="entrar" type='submit' value='Login'>
+                                </div>
+                                <div class="cadastro">
+                                    <p>Não possui conta, <a class="cadastro" href="formulario.html">Cadastre-se</a></p>
+                                </div>
+                            </div> 
                         </div>
                     </div>
-
                 <i class="fa fa-bars" onClick = "showMenu()"></i>
             </nav>
         </header>
@@ -39,7 +54,7 @@
                 <p class="boxItem p01">O projeto de extensão [nome] com sede no Instituto Federal do Paraná te convida a participar da competição de matemática MathX com seus amigos!  </p>
                 <div class="btnDiv boxItem">
                     <button class="saibaBtn btn boxBtn"><a href="#">Saiba mais!</a></button>
-                    <button class="incBtn btn boxBtn"><a href="#">Inscreva-se</a></button>
+                    <button class="incBtn btn boxBtn"><a href="../template/formulario.html">Inscreva-se</a></button>
                 </div>
             </div>
             <div class="imgB">

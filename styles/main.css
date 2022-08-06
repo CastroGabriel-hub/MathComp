@@ -73,6 +73,7 @@
     background-color:#ffffff;
     padding:16px 24px;
     width: 400px;
+    height: 400px;
     border-radius: 34px;
     border-bottom-right-radius: 125px;
 }
@@ -83,6 +84,8 @@
     background-color: lightgray;
     text-align: center;
     line-height: 20px;
+    margin-bottom: 3px;
+    margin-top: 5px;
 }
 .close:hover{
     background-color: darkgray;
@@ -91,6 +94,48 @@
     opacity: 1;
     visibility: visible;
     transform: scale(1.0);
+}
+.form-control{
+    border-radius: 17px;
+    border-bottom-right-radius: 63px;
+    height: 30px;
+    width: 75%;
+}
+.login{
+    padding-bottom: 15px;
+}
+.h1Login{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding-top: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width:100%;
+    height: 50px;
+    border-radius: 17px;
+    border-bottom-right-radius: 63px;
+    background-image: linear-gradient(to bottom right,#0CB8AE, #0D25B9);
+}
+.entrar{
+    background-color: lightgray;
+    color: #000;
+    border-radius: 17px;
+    border: none;
+    height: 30px;
+    width: 40%;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    outline: 0;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+.cadastro{
+    font-size: 15px;
+    padding-top: 15px;
 }
 
 .header {
