@@ -73,10 +73,10 @@
 .modal-content{
     background-color:#ffffff;
     padding:16px 24px;
-    width: 400px;
-    height: 400px;
+    width: 40vw;
+    height: 50vh;
     border-radius: 34px;
-    border-bottom-right-radius: 125px;
+    border-bottom-right-radius: 100px;
 }
 .close{
     float:right;
@@ -104,9 +104,10 @@
 }
 .login{
     padding-bottom: 15px;
+    font-size: 0.90rem;
 }
 .h1Login{
-    font-size: 30px;
+    font-size: 1.75rem;
     font-weight: bold;
     color: #fff;
     text-align: center;
@@ -400,7 +401,7 @@ nav .fa{
         position: absolute;
         top: 13vh;
         right: 0;
-        width: 50vw;
+        width: 30vw;
         height: 92vh;
         background: #fff;
         flex-direction: column;
