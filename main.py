@@ -6,10 +6,10 @@ db = banco.cursor()
 
 app = Flask(__name__)
 
-#
+@app.route('/home', methods = ["GET", "POST"])
 @app.route('/', methods = ["GET", "POST"])
 def index():
-    return render_template("layout.html")
+    return render_template("home.html")
 
 @app.route('/event', methods = ["GET", "POST"])
 def event():
@@ -28,6 +28,14 @@ def event():
     #render_template é uma função q renderiza uma página, desse modo que eu usei independentemente do que o
     #usuário tiver feito, se foi get ou post, renderizará a página normalmente
     return render_template("event.html")
-    
+
+@app.route('/evento', methods = ["GET", "POST"])
+def evento():
+    return render_template("evento.html")
+
+@app.route('/formulario', methods = ["GET", "POST"])
+def formulario():
+    return render_template("formulario.html")
+
 if __name__ == "__main__":
     app.run(debug=True)

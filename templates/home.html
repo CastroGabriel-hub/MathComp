@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name = "viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css')}}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        
+        <title>Home</title>
+
+    </head>
+    <body>
+        <header class = "header">
+            <nav class="navbar">
+                <div class="mobile-menu">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </div>
+                    <ul class="nav-links">
+                        <li ><a href="home">Home</a></li>
+                        <li><a href="evento">Evento</a></li>
+                        <li><a href="formulario">Inscreva-se</a></li>
+                    </ul>
+
+                    <button class="btnLogin btn" onclick="showModal()"><a href="#">Login</a></button>
+
+                    <div class="modal" id="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="hideModal()">&times;</span>
+                            <h1 class="h1Login">Login</h1>
+                            <div class="form-group">
+                                <div class="login">
+                                    <label for="Usuário"><h1>Usuário</h1></label><br>
+                                    <input type="text" class="form-control" name="usuario" placeholder="Usuário">
+                                </div>
+                                <div class="login">
+                                    <label for="senha"><h1>Senha</h1></label><br>
+                                    <input type="password" class="form-control" name="senha" placeholder="Senha" >
+                                </div>
+                                <div >
+                                    <input class="entrar" type='submit' value='Login'>
+                                </div>
+                                <div class="cadastro">
+                                    <p>Não possui conta, <a class="cadastro" href="formulario">Cadastre-se</a></p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+            </nav>
+        </header>
+
+        <section class="text-box">
+            <div class="txtB">
+                <h1 class="boxItem title01">Math Comp.</h1>
+                <p class="boxItem p01">O projeto de extensão [nome] com sede no Instituto Federal do Paraná te convida a participar da competição de matemática MathX com seus amigos!  </p>
+                <div class="btnDiv boxItem">
+                    <button class="saibaBtn btn boxBtn"><a href="evento">Saiba mais!</a></button>
+                    <button class="incBtn btn boxBtn"><a href="formulario">Inscreva-se</a></button>
+                </div>
+            </div>
+            <div class="imgB">
+                <img src="../static/images/avatar01.png" alt="Math Comp" id="boxImg01">
+            </div>
+        </section>
+
+        <section class="missao">
+            <div class="misImg">
+                <img src="../static/images/avatar02.png" alt="nossa missão" class="contImg">
+            </div>
+            <div class="txtDiv">
+                <h1 class="contT">Nossa missão</h1>
+                <p class="contP">A nossa missão é incentivar jovens a explorar o mundo de 
+                    competições científicas, estimulando o trabalho em equipe
+                    e a importância da troca de racicínio para resolução de 
+                    problemas!
+                </p>
+                <p class="contP">
+                    Mais texto mais texto mais texto mais texto mais texto mais
+                    texto mais texto mais texto mais texto mais text
+                </p>
+            </div>
+        </section>
+
+        <section class="diferencial">
+            <div class="txtDiv">
+                <h1 class="contT">Nosso diferencial</h1>
+                <p class="contP">
+                    O nosso diferencial é que a competição acontecerá 
+                    totalmente on-line, permitindo que os alunos possam 
+                    trabalhar nas questões direto de casa com seus amigos! 
+                </p>
+                <p class="contP">
+                    Além disso, os resultados são extremamente rápidos, já
+                    que a análise das respostas será automatizada. 
+                </p>
+            </div>
+            <div class="difImg">
+                <img src="../static/images/avatar03.png" alt="nossa missão" class="contImg">
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <h1>Contate-nos:</h1>
+            <p class="footerComponent"><i class="bi bi-envelope"></i> Email</p>
+            <p class="footerComponent"><i class="bi bi-geo-alt"></i> Rua Benutez, 992, Vila A - Foz do Iguaçu</p>
+            <p class="footerComponent"><i class="bi bi-telephone"></i> (45) 99914-1402</p>
+        </footer>
+
+        <script src="../static/scripts/functionsNav.js"></script>
+        <script src="../static/scripts/main.js"></script>
+    </body>
+</html>
